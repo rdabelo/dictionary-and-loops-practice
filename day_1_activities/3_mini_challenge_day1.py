@@ -388,4 +388,81 @@ for student in students:
     if student["cps_id"] == cps_id:
         print(" ERROR: CPS ID is already taken.")
 
+# while True:
+#     print("\nStudent Lookup System")
+#     print("1. Search student by name")
+#     print("2. Add new student")
+#     print("3. Exit")
+
+#     choice = input("Select an option: ")
+
+    
+#     if choice == "1":
+#         print("\nSearch format: Last, First")
+#         search_name = input("Enter student name: ").strip()
+
+#         found = False
+
+#         for student in students:
+#             if student["Combo,Name"].lower() == search_name.lower():
+#                 print("\nStudent Information")
+#                 print("CPS ID:", student["CPSID"])
+#                 print("Homeroom:", student["HR"])
+#                 print("Grade Level:", student["GL"])
+#                 print("Primary Email:", student["Email"][0])
+
+#                 found = True
+#                 break
+
+#         if not found:
+#             print("No student with that name was found.")
+
+    
+#     elif choice == "2":
+#         cps_id = int(input("Enter CPS ID: "))
+
+#         exists = False
+#         for student in students:
+#             if student["CPSID"] == cps_id:
+#                 exists = True
+#                 break
+
+#         if exists:
+#             print("Error: CPS ID already exists.")
+#         else:
+#             first = input("First Name: ").strip()
+#             last = input("Last Name: ").strip()
+#             middle = input("Middle Name: ").strip()
+#             homeroom = input("Homeroom: ").strip()
+#             grade = int(input("Grade Level: "))
+#             primary_email = input("Primary Email: ").strip()
+#             secondary_email = input("Secondary Email: ").strip()
+
+#             full_name = f"{last}, {first}"
+
+#             new_student = {
+#                 "CPSID": cps_id,
+#                 "Combo,Name": full_name,
+#                 "LName": last,
+#                 "FName": first,
+#                 "MName": middle,
+#                 "HR": homeroom,
+#                 "GL": grade,
+#                 "Email": [primary_email, secondary_email]
+#             }
+
+#             students.append(new_student)
+
+#             print("\nStudent added successfully.")
+#             print("Total number of students:", len(students))
+#             print("New student record:")
+#             print(new_student)
+
+    
+#     elif choice == "3":
+#         print("Program closed.")
+#         break
+
+#     else:
+#         print("Invalid selection. Please try again.")
 
